@@ -4,9 +4,7 @@ import java.io.File;
 import java.lang.annotation.Annotation;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 public class Parser {
@@ -82,8 +80,8 @@ public class Parser {
     public static List<List<String>> getBuildParams(String model, String mac, String group) {
     	List<List<String>> buildList = new ArrayList<>();
     	
-    	ArrayList<String> build1 = new ArrayList<>();
-    	ArrayList<String> build2 = new ArrayList<>();
+    	ArrayList<String> build1 = new ArrayList<String>();
+    	ArrayList<String> build2 = new ArrayList<String>();
     	
     	build1.add("try");
     	build1.add("try1");
